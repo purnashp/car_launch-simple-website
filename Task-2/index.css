@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+scroll-behavior:smooth ;}
+
+body {
+    background-color: black;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.4);
+    position: fixed;
+    background-color: black;
+}
+
+.logo {
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    height: 10vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    height: 40%;
+    margin-left: 60%;
+}
+
+.logo h1 {
+    font-family: monospace;
+    color: white;
+    margin: 0.5em 0 0 0.2em;
+    font-weight: 100;
+}
+
+.links ul {
+    height: 10vh;
+    width: 50%;
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 100;
+    transition: all 2s;
+    position: relative;
+}
+
+.links ul a:hover {
+    color: #ff3c59;
+
+}
+
+.links ul a::after {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.links ul a:hover:after {
+    width: 110%;
+}
+header {
+    height: 85vh;
+    width: 100%;
+    padding-top: 15vh;
+
+}
+
+
+header h1, header h3{
+    text-align: center;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: inherit;
+    text-transform: capitalize;
+    padding-top: 1em;
+}
+header h1::first-letter{
+    color: red;
+}
+header h3{
+    padding-top: 0;
+}
+.container{
+    height: 60vh;
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container img{
+    height: 110%;
+}
+
+.about{
+    height: 85vh;
+    width: 100%;
+    padding-top: 20vh;
+   
+}
+
+.about p{
+    color: white;
+    width: 80%;
+    text-align:justify;
+    margin: auto;
+    margin-top: 30px;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.cont{
+   height: 60vh;
+   width: 90%;
+   margin:  auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.cont .image{
+    height: 80%;
+    width: 50%;
+}
+.cont img{
+    height: 100%;
+    width: 100%;
+}
+.cont .box{
+    height: 80%;
+    width: 50%;
+}
+.cont .box h1{
+    color: #ff3c59;
+    width: 70%;
+    margin:5vh 0 3vh 8vh;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+}
+.pop{
+    height: 85vh;
+    width: 100%;
+    padding-top: 15vh;
+}
+.pop h1{
+    font-family: monospace;
+    color: white;
+    margin: 0.5em 0 0 0.2em;
+    font-weight: 100;
+    text-align: center;
+    text-transform: capitalize;
+}
+.pop .cont2{
+    height: 60vh;
+    width: 80%;
+    margin: 10vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pop .dis{
+    height: 90%;
+    width: 55%;
+}
+.pop .pic{
+    height: 90%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.pop .pic img{
+    height: 100px;
+    width: 70%;
+    margin: auto;
+    transition: all 0.5s;
+}
+.pop .pic img:hover{
+  transform: scale(1.12);
+  border-radius: 30%;
+    
+}
+.fea{
+    height: 85vh;
+    width: 100%;
+}
+.fea h1{
+    font-family: monospace;
+    color: white;
+    margin: 0.5em 0 0 0.2em;
+    font-weight: 100;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:overline;
+}
+.cona2{
+    height: 70vh;
+    width: 90%;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+.obj{
+    height: 150px;
+    width: 250px;
+    margin: auto;
+    transition: all 2s;
+}
+.obj:hover{
+    transform: scale(1.5);
+}
+.obj h2{
+    color: rgb(6, 208, 184);
+
+    
+}
+.obj h4{
+    color:white;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+}
